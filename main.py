@@ -1,33 +1,33 @@
-# 파일이름 :
-# 작 성 자 :
+# 파일이름 : main.py
+# 작 성 자 : mju, 3-31
+# 하 는 일 : 도장깨기!   맛집 버킷 리스트
 
-
-# 1. 비어있는 리스트 bucket_list 만들기
+# 1. 비어있는 리스트 만들기
 bucket_list = []
 
-# 2. input()을 3번 사용하여 맛집 3곳 입력받고 리스트 맨 뒤에 추가(append)
-place1 = input("맛집 리스트 입력: ")
-bucket_list.append(place1)
+# 2. 입력 받고 리스트에 추가 하기 - 3번
+restaurant = input("맛집 리스트 입력: ")
+bucket_list.append(restaurant)
 
-place2 = input("맛집 리스트 입력: ")
-bucket_list.append(place2)
+restaurant = input("맛집 리스트 입력: ")
+bucket_list.append(restaurant)
 
-place3 = input("맛집 리스트 입력: ")
-bucket_list.append(place3)
+restaurant = input("맛집 리스트 입력: ")
+bucket_list.append(restaurant)
 
-# 첫 번째 미션 후 리스트 출력 (화면 예시 참고)
-print(f"리스트: {bucket_list}\n")
+# 3. 리스트 출력
+print(f'리스트:{bucket_list}')
 
-# 3. '1순위 VIP 맛집'을 입력받고 리스트의 맨 앞(0번 인덱스)에 삽입(insert)
-vip_place = input("맛집 리스트 추가: ")
-bucket_list.insert(0, vip_place)
+# 4. 맛집을 입력 받아 리스트 0 에 삽입
+vip_restaurant = input("맛집 리스트 추가: ")
+bucket_list.insert(0, vip_restaurant)
 
-# 두 번째 미션 후 리스트 출력
-print(f"리스트 : {bucket_list}\n")
+# 5. 리스트 출력
+print(f'리스트:{bucket_list}')
 
-# 4. '오늘 방문한 맛집'을 입력받고 리스트에서 삭제(remove)
-visited_place = input("도장 깨기: ")
-bucket_list.remove(visited_place)
+# 6. 도장깬 맛집을 입력 받아, 리스트에서 삭제
+visited = input("도장 깨기: ")
+bucket_list.remove(visited)
 
-# 5. 최종 bucket_list 출력
-print(f"리스트 : {bucket_list}")
+# 7. 리스트 출력
+print(f'리스트:{bucket_list}')
